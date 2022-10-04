@@ -34,9 +34,9 @@
  * var parsed_annotations = arrays.parsed_annotations;
  */
 const fs = require('fs');
-const config = require('./DOWNLOADED_DATA.json');
+const config = require('../data/DOWNLOADED_DATA.json');
 const XMLHttpRequest = require('xhr2');
-const I3 = require("../build/index");
+const I3 = require('@digital-piranesi/iiif-manifest-generator').default;
 
 const IN_EASY_TERMS = {
   ARTSTOR_URL: "http://simile.mit.edu/2003/10/ontologies/artstor#url",
@@ -491,10 +491,6 @@ async function getWidthAndHeightDataFromServer(image){
   var decoder = new RDFDecoder(config);
   var arrays = decoder.decode();
 
-  console.log(arrays.media_pages);
-  
-  return;
-
   // Each element in `media_pages` is a URL to a Scalar page for the photo we are
   // generating a manifest for.
   for(const url of arrays.media_pages){
@@ -540,10 +536,4 @@ async function getWidthAndHeightDataFromServer(image){
     console.log(manifest.toJSONString());
     // TODO: Write to file: url.json
   }
-
-/*  for(const anno of arrays.parsed_annotations){
-    var annotation = calculate_annotations(anno, 17771, 12932, "http://piranesi-test.reclaim.hosting/mirador/media/pantheon/canvas/p1");
-
-    console.log(annotation);
-  }*/
 })();
