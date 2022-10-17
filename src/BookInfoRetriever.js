@@ -472,6 +472,7 @@ function calculate_annotations(annotationObject, width, height, target) {
  * @throws Error
  */
 async function getWidthAndHeightDataFromServer(image){
+   // TODO: Replace this URL with the general URL for the library's IIIF server
    var req = await request("GET", `https://env-4072537.us.reclaim.cloud/iiif/2/${image}/info.json`, {});
 
    var responseString = await req;
@@ -494,6 +495,8 @@ async function getWidthAndHeightDataFromServer(image){
   // Each element in `media_pages` is a URL to a Scalar page for the photo we are
   // generating a manifest for.
   for(const url of arrays.media_pages){
+    // TODO: This exists to avoid generating manifests for each image. This will
+    //       need replaced once we have more general functions.
     if(!url.includes("scalar.usc.edu/works/piranesidigitalproject/media/vol15_page97")){
       continue;
     }
@@ -504,7 +507,8 @@ async function getWidthAndHeightDataFromServer(image){
     var webAnnotationPageID = url + "/page/p1/1";
     var annotationPageID = url + "/page/p2/1";
     var webAnnotationImageID = url + "/annotation/p1-image";
-    var imageURL = "test.jpg"; //imagesArray[url]; // TODO: Create images array
+    // TODO: Replace this with the actual URL of the image (will be IIIF url)
+    var imageURL = "";
     var imageWidth = 0;
     var imageHeight = 0;
 
