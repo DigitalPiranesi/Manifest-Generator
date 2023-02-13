@@ -497,10 +497,11 @@ async function getWidthAndHeightDataFromServer(image){
   for(const url of arrays.media_pages){
     // TODO: This exists to avoid generating manifests for each image. This will
     //       need replaced once we have more general functions.
-    if(!url.includes("scalar.usc.edu/works/piranesidigitalproject/media/vol15_page97")){
+    if(!url.includes("scalar.usc.edu/works/piranesidigitalproject/view-of-the-pantheon-1")){
       continue;
     }
 
+    console.log(`Beginning construction for ${url}`);
     // TODO: Look into whether this has to be the actual URL of the manifest
     var manifestID = url + ".json";
     var canvasID   = url + "/canvas/p1";
@@ -508,7 +509,7 @@ async function getWidthAndHeightDataFromServer(image){
     var annotationPageID = url + "/page/p2/1";
     var webAnnotationImageID = url + "/annotation/p1-image";
     // TODO: Replace this with the actual URL of the image (will be IIIF url)
-    var imageURL = "";
+    var imageURL = "test.jpeg";
     var imageWidth = 0;
     var imageHeight = 0;
 
