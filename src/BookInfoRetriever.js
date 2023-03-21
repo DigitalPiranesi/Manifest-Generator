@@ -26,13 +26,14 @@
  *
  * Usage:
  *
- *
  * // Now, parsed_annotations contains an array of the annotations in the format
  * // above.
  * var decoder = new RDFDecoder({...});
  * var arrays = decoder.decode();
  * var parsed_annotations = arrays.parsed_annotations;
  */
+
+const IIIF_BASE_SERVER_URL = "https://env-4072537.us.reclaim.cloud/iiif/2/";
 const fs = require('fs');
 const config = require('../data/DOWNLOADED_DATA.json');
 const XMLHttpRequest = require('xhr2');
@@ -411,6 +412,7 @@ class RDFDecoder {
         var annotation_content = this.get_content(annotation_body_uri);
         var target = this.get_target(anno);
 
+        // TODO: Bug here regarding how pixel offset is calculated
         var xywh = {
           // x%,y% format
           x: parseFloat(target.xywh.split(",")[0]) / 100,
@@ -471,9 +473,8 @@ function calculate_annotations(annotationObject, width, height, target) {
  * @return An object with the `width` and `height` properties
  * @throws Error
  */
-async function getWidthAndHeightDataFromServer(image){
-   // TODO: Replace this URL with the general URL for the library's IIIF server
-   var req = await request("GET", `https://env-4072537.us.reclaim.cloud/iiif/2/${image}/info.json`, {});
+async function getWidthAndHeightDataFromServer(imageUrl){
+   var req = await request("GET", `${IIIF_SERVER_BASE_URL}${imageUrl}/info.json`, {});
 
    var responseString = await req;
    var response = JSON.parse(responseString);
@@ -489,15 +490,25 @@ async function getWidthAndHeightDataFromServer(image){
 }
 
 (function(){
+  if(!Array.isArray(process.argv) || process.argv.length < 3) {
+    console.log(`usage: ${process.argv[1]} <page url>`);
+    return;
+  }
+
+  var page_url = process.argv[2];
   var decoder = new RDFDecoder(config);
+
+  console.log(`Beginning decoding...`);
   var arrays = decoder.decode();
 
+  console.log(`Generating manifest for page: ${page_url}`);
+
+  // TODO: Page mapping: page_url -> image_url
   // Each element in `media_pages` is a URL to a Scalar page for the photo we are
   // generating a manifest for.
   for(const url of arrays.media_pages){
-    // TODO: This exists to avoid generating manifests for each image. This will
-    //       need replaced once we have more general functions.
-    if(!url.includes("scalar.usc.edu/works/piranesidigitalproject/view-of-the-pantheon-1")){
+    if(!url.includes(page_url)){
+      console.log(`Skipping ${url}`);
       continue;
     }
 
@@ -508,10 +519,10 @@ async function getWidthAndHeightDataFromServer(image){
     var webAnnotationPageID = url + "/page/p1/1";
     var annotationPageID = url + "/page/p2/1";
     var webAnnotationImageID = url + "/annotation/p1-image";
-    // TODO: Replace this with the actual URL of the image (will be IIIF url)
-    var imageURL = "test.jpeg";
-    var imageWidth = 0;
-    var imageHeight = 0;
+    var imageURL = image_url;  // Obtained from media-page-url -> image-url mapping (hand made)
+    var imageDimensions = getImageWidthAndHeightDataFromServer(imageURL);
+    var imageWidth = 0;  // TODO: Get this via the function provided
+    var imageHeight = 0;  // TODO: Get this via the function provided
 
     var manifest = new I3.Manifest(3, manifestID);
     var canvas = new I3.ItemCanvas(canvasID, imageWidth, imageHeight);
