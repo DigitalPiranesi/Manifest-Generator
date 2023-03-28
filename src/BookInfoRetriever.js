@@ -38,7 +38,7 @@ const fs = require('fs');
 const config = require('../data/rdf_data.json');
 const XMLHttpRequest = require('xhr2');
 const I3 = require('@digital-piranesi/iiif-manifest-generator').default;
-const IMAGE_MAPPING = require('../data/image_mapping.json');
+const IMAGE_MAPPING = require('../data/image_mapping_all_volumes');
 
 const IN_EASY_TERMS = {
   ARTSTOR_URL: "http://simile.mit.edu/2003/10/ontologies/artstor#url",
@@ -515,14 +515,9 @@ async function getWidthAndHeightDataFromServer(imageUrl){
 
   console.log(`Generating manifest for page: ${page_url}`);
 
-  // TODO: Page mapping: page_url -> image_url
-  // Each element in `media_pages` is a URL to a Scalar page for the photo we are
-  // generating a manifest for.
-  //
   // Note: I think this can be sped up
   for(const url of arrays.media_pages){
     if(!url.includes(page_url)){
-      console.log(`Skipping ${url}`);
       continue;
     }
 

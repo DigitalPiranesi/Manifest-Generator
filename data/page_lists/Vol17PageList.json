@@ -1,348 +1,348 @@
 {
-    "pages": [
-        {
-            "name": "Piranesi_Rescan_Vol17_007.jpg",
+    "pages": {
+        "https://scalar.usc.edu/works/piranesidigitalproject/frontispiece-4": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/frontispiece-4",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-di-roma-image-7"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-di-roma-image-7",
+            "name": "Piranesi_Rescan_Vol17_007.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_013.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-pantheon-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-pantheon-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/pantheon-from-views-of-rome"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/pantheon-from-views-of-rome",
+            "name": "Piranesi_Rescan_Vol17_013.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_019.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-pronaos-of-the-pantheon": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-pronaos-of-the-pantheon",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-19"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-19",
+            "name": "Piranesi_Rescan_Vol17_019.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_025.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-pantheon": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-pantheon",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-25"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-25",
+            "name": "Piranesi_Rescan_Vol17_025.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_031.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-pantheon-called-the-rotonda": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-pantheon-called-the-rotonda",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-31"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-31",
+            "name": "Piranesi_Rescan_Vol17_031.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_037.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-temple-of-minerva-medica": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-temple-of-minerva-medica",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-37"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-37",
+            "name": "Piranesi_Rescan_Vol17_037.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_043.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-capitoline-hill-with-the-steps-leading-to-santa-maria-in-aracoeli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-capitoline-hill-with-the-steps-leading-to-santa-maria-in-aracoeli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-43"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-43",
+            "name": "Piranesi_Rescan_Vol17_043.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_049.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-capitoline-hill-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-capitoline-hill-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-49"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-49",
+            "name": "Piranesi_Rescan_Vol17_049.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_055.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/side-view-of-the-capitoline-hill-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/side-view-of-the-capitoline-hill-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-55"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-55",
+            "name": "Piranesi_Rescan_Vol17_055.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_061.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-roman-forum-1-of-2": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-roman-forum-1-of-2",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-61"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-61",
+            "name": "Piranesi_Rescan_Vol17_061.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_067.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-temple-of-jupiter-tonans": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-temple-of-jupiter-tonans",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-67"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-67",
+            "name": "Piranesi_Rescan_Vol17_067.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_073.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/another-view-of-the-temple-of-concord": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/another-view-of-the-temple-of-concord",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-73"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-73",
+            "name": "Piranesi_Rescan_Vol17_073.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_079.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-temple-of-concord": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-temple-of-concord",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-79"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-79",
+            "name": "Piranesi_Rescan_Vol17_079.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_085.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-roman-forum-2-of-2": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-roman-forum-2-of-2",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-85"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-85",
+            "name": "Piranesi_Rescan_Vol17_085.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_091.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-site-of-the-ancient-roman-forum": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-site-of-the-ancient-roman-forum",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-91"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-91",
+            "name": "Piranesi_Rescan_Vol17_091.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_097.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/arch-of-septimius-severus-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/arch-of-septimius-severus-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-97"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-97",
+            "name": "Piranesi_Rescan_Vol17_097.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_103.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-temple-of-antoninus-and-faustina-in-the-roman-forum": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-temple-of-antoninus-and-faustina-in-the-roman-forum",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-103"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-103",
+            "name": "Piranesi_Rescan_Vol17_103.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_109.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-dining-room-of-neros-golden-house-1-of-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-dining-room-of-neros-golden-house-1-of-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-degli-avanzi-del-tablino-della-casa-aurea-di-nerone-detti-volgarmente-il-tempio-della-pace-2"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-degli-avanzi-del-tablino-della-casa-aurea-di-nerone-detti-volgarmente-il-tempio-della-pace-2",
+            "name": "Piranesi_Rescan_Vol17_109.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_115.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-115": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-115",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-115"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-115",
+            "name": "Piranesi_Rescan_Vol17_115.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_121.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-121": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-121",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-121"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-121",
+            "name": "Piranesi_Rescan_Vol17_121.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_127.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-127": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-127",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-127"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-127",
+            "name": "Piranesi_Rescan_Vol17_127.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_133.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/v17-page-133": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/v17-page-133",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/v17-page-133"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/v17-page-133",
+            "name": "Piranesi_Rescan_Vol17_133.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_139.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/veduta-dellarco-di-tito": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-dellarco-di-tito",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-dellarco-di-tito"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-dellarco-di-tito",
+            "name": "Piranesi_Rescan_Vol17_139.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_145.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/tempio-detto-volgarmte-di-giano": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/tempio-detto-volgarmte-di-giano",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/tempio-detto-volgarmte-di-giano"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/tempio-detto-volgarmte-di-giano",
+            "name": "Piranesi_Rescan_Vol17_145.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_151.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-dellarco-di-costantino": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-dellarco-di-costantino",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-dellarco-di-costantino"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-dellarco-di-costantino",
+            "name": "Piranesi_Rescan_Vol17_151.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_157.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-dellarci-di-benevento-nel-regno-di-napoli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-dellarci-di-benevento-nel-regno-di-napoli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-dellarci-di-benevento-nel-regno-di-napoli"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-dellarci-di-benevento-nel-regno-di-napoli",
+            "name": "Piranesi_Rescan_Vol17_157.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_163.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/veduta-degli-avanzi-del-foro-di-nerva": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-degli-avanzi-del-foro-di-nerva",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-degli-avanzi-del-foro-di-nerva"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-degli-avanzi-del-foro-di-nerva",
+            "name": "Piranesi_Rescan_Vol17_163.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_169.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-degli-avanzi-del-foro-di-nerua": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-degli-avanzi-del-foro-di-nerua",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-degli-avanzi-del-foro-di-nerua"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/vedvta-degli-avanzi-del-foro-di-nerua",
+            "name": "Piranesi_Rescan_Vol17_169.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_175.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/veduta-dellanfiteatro-flavio-detto-il-colosseo": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-dellanfiteatro-flavio-detto-il-colosseo",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-dellanfiteatro-flavio-detto-il-colosseo"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-dellanfiteatro-flavio-detto-il-colosseo",
+            "name": "Piranesi_Rescan_Vol17_175.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_181.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/colosseum-from-views-of-rome": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/colosseum-from-views-of-rome",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/colosseum-from-views-of-rome"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/colosseum-from-views-of-rome",
+            "name": "Piranesi_Rescan_Vol17_181.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_187.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-colosseum": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-colosseum",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-187"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-187",
+            "name": "Piranesi_Rescan_Vol17_187.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_193.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-arch-of-constantine-and-the-colosseum-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-arch-of-constantine-and-the-colosseum-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-193"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-193",
+            "name": "Piranesi_Rescan_Vol17_193.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_199.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-colosseum-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-colosseum-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-199"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-199",
+            "name": "Piranesi_Rescan_Vol17_199.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_205.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-animal-cages-built-by-emperor-domitian-for-the-colosseum": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-animal-cages-built-by-emperor-domitian-for-the-colosseum",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-205"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-205",
+            "name": "Piranesi_Rescan_Vol17_205.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_211.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/theater-of-marcellus-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/theater-of-marcellus-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-211"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-211",
+            "name": "Piranesi_Rescan_Vol17_211.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_217.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/ruins-of-the-antonine-baths": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/ruins-of-the-antonine-baths",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-217"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-217",
+            "name": "Piranesi_Rescan_Vol17_217.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_223.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/ruins-of-the-xystus-or-the-grand-hall-of-the-antonine-baths": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/ruins-of-the-xystus-or-the-grand-hall-of-the-antonine-baths",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-223"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-223",
+            "name": "Piranesi_Rescan_Vol17_223.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_229.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-baths-of-diocletian": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-baths-of-diocletian",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-229"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-229",
+            "name": "Piranesi_Rescan_Vol17_229.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_235.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-santa-maria-degli-angeli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-santa-maria-degli-angeli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-235"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-235",
+            "name": "Piranesi_Rescan_Vol17_235.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_241.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-baths-of-diocletian-at-santa-maria-degli-angeli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-baths-of-diocletian-at-santa-maria-degli-angeli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-241"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-241",
+            "name": "Piranesi_Rescan_Vol17_241.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_247.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-baths-of-titus": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-baths-of-titus",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-247"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-247",
+            "name": "Piranesi_Rescan_Vol17_247.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_253.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-remains-of-the-buildings-on-the-second-floor-of-the-baths-of-titus": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-remains-of-the-buildings-on-the-second-floor-of-the-baths-of-titus",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-253"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-253",
+            "name": "Piranesi_Rescan_Vol17_253.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_259.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-tomb-of-gaius-cestius": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-tomb-of-gaius-cestius",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-259"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-259",
+            "name": "Piranesi_Rescan_Vol17_259.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_265.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/pyramid-of-caius-cestius": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/pyramid-of-caius-cestius",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-265"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-265",
+            "name": "Piranesi_Rescan_Vol17_265.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_271.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/tomb-of-cecilia-metella": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/tomb-of-cecilia-metella",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-271"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-271",
+            "name": "Piranesi_Rescan_Vol17_271.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_277.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/tombs-of-licinianus-and-the-cornelii": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/tombs-of-licinianus-and-the-cornelii",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-277"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-277",
+            "name": "Piranesi_Rescan_Vol17_277.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_283.jpg",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-283"
+        "undefined": {
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-283",
+            "name": "Piranesi_Rescan_Vol17_283.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_289.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-ponte-lugano-on-the-anio": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-ponte-lugano-on-the-anio",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-289"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-289",
+            "name": "Piranesi_Rescan_Vol17_289.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_295.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-tomb-of-the-plautii": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-tomb-of-the-plautii",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-295"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-295",
+            "name": "Piranesi_Rescan_Vol17_295.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_301.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-so-called-temple-of-the-tosse-near-tivoli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-so-called-temple-of-the-tosse-near-tivoli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-301"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-301",
+            "name": "Piranesi_Rescan_Vol17_301.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_307.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/media/volume-17-page-307": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/media/volume-17-page-307",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-307"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-307",
+            "name": "Piranesi_Rescan_Vol17_307.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_313.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/remains-of-the-villa-of-maecenas-at-tivoli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/remains-of-the-villa-of-maecenas-at-tivoli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-313"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-313",
+            "name": "Piranesi_Rescan_Vol17_313.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_319.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/another-interior-view-of-the-villa-of-maecenas": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/another-interior-view-of-the-villa-of-maecenas",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-319"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-319",
+            "name": "Piranesi_Rescan_Vol17_319.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_325.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-villa-of-maecenas": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/interior-view-of-the-villa-of-maecenas",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-325"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-325",
+            "name": "Piranesi_Rescan_Vol17_325.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_331.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-temple-of-the-sibyl-in-tivoli-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-temple-of-the-sibyl-in-tivoli-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-del-tempio-della-sibilla-in-tivoli"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/veduta-del-tempio-della-sibilla-in-tivoli",
+            "name": "Piranesi_Rescan_Vol17_331.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_337.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/another-view-of-the-temple-of-the-sibyl-in-tivoli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/another-view-of-the-temple-of-the-sibyl-in-tivoli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/altra-vedvta-del-tempio-della-sibilla-in-tivoli"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/altra-vedvta-del-tempio-della-sibilla-in-tivoli",
+            "name": "Piranesi_Rescan_Vol17_337.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_343.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/another-view-of-the-temple-of-the-sibyl-in-tivoli-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/another-view-of-the-temple-of-the-sibyl-in-tivoli-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-343"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-343",
+            "name": "Piranesi_Rescan_Vol17_343.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_349.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-waterfall-of-tivoli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-waterfall-of-tivoli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-349"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-349",
+            "name": "Piranesi_Rescan_Vol17_349.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_355.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-small-waterfalls-in-tivoli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-small-waterfalls-in-tivoli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-355"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-355",
+            "name": "Piranesi_Rescan_Vol17_355.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_361.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-remains-of-the-praetorian-fort-in-hadrians-villa": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-remains-of-the-praetorian-fort-in-hadrians-villa",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-361"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-361",
+            "name": "Piranesi_Rescan_Vol17_361.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_367.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/remains-of-a-room-belonging-to-the-praetorian-fort-at-hadrians-villa": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/remains-of-a-room-belonging-to-the-praetorian-fort-at-hadrians-villa",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-367"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-367",
+            "name": "Piranesi_Rescan_Vol17_367.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_373.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-piazza-doro-in-hadrians-villa": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-piazza-doro-in-hadrians-villa",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-373"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-373",
+            "name": "Piranesi_Rescan_Vol17_373.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_379.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-heliocaminus-used-in-winter": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/view-of-the-heliocaminus-used-in-winter",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-379"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-379",
+            "name": "Piranesi_Rescan_Vol17_379.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_385.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/meeting-hall-in-hadrians-villa": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/meeting-hall-in-hadrians-villa",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-385"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-385",
+            "name": "Piranesi_Rescan_Vol17_385.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_391.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/ruins-of-one-of-the-soldiers-barracks-in-hadrians-villa": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/ruins-of-one-of-the-soldiers-barracks-in-hadrians-villa",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-391"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-veduta-391",
+            "name": "Piranesi_Rescan_Vol17_391.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_397.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/remains-of-the-temple-of-the-god-canopus-at-hadrians-villa-in-tivoli": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/remains-of-the-temple-of-the-god-canopus-at-hadrians-villa-in-tivoli",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-397"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-397",
+            "name": "Piranesi_Rescan_Vol17_397.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_403.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/media/17-vedute-di-roma-image-403": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/media/17-vedute-di-roma-image-403",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-403"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-403",
+            "name": "Piranesi_Rescan_Vol17_403.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_409.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/ruins-of-a-sculpture-gallery-at-hadrians-villa-at-tivoli-1": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/ruins-of-a-sculpture-gallery-at-hadrians-villa-at-tivoli-1",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-409"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-409",
+            "name": "Piranesi_Rescan_Vol17_409.jpg"
         },
-        {
-            "name": "Piranesi_Rescan_Vol17_415.jpg",
+        "https://scalar.usc.edu/works/piranesidigitalproject/remains-of-the-temple-said-to-be-of-apollo-in-hadrians-villa": {
             "media_page": "https://scalar.usc.edu/works/piranesidigitalproject/remains-of-the-temple-said-to-be-of-apollo-in-hadrians-villa",
-            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-415"
+            "regular_page": "https://scalar.usc.edu/works/piranesidigitalproject/17-vedute-415",
+            "name": "Piranesi_Rescan_Vol17_415.jpg"
         }
-    ]
+    }
 }
