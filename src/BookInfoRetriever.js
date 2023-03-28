@@ -38,6 +38,7 @@ const fs = require('fs');
 const config = require('../data/DOWNLOADED_DATA.json');
 const XMLHttpRequest = require('xhr2');
 const I3 = require('@digital-piranesi/iiif-manifest-generator').default;
+const IMAGE_MAPPING = require('../data/image_mapping.json');
 
 const IN_EASY_TERMS = {
   ARTSTOR_URL: "http://simile.mit.edu/2003/10/ontologies/artstor#url",
@@ -67,6 +68,13 @@ const RDF_SYNTAX_TYPES = {
   INVALID_TYPE: -1
 };
 
+/**
+ * Issue an HTTP request with optional headers, body, and parameters.
+ *
+ * @param method HTTP method
+ * @param url the URL to request
+ * @param options an object with headers or parameters (in JSON)
+ */
 const request = function(method, url, options){
   return new Promise(function(resolve, reject){
     var request = new XMLHttpRequest();
@@ -476,16 +484,20 @@ function calculate_annotations(annotationObject, width, height, target) {
 async function getWidthAndHeightDataFromServer(imageUrl){
    var req = await request("GET", `${IIIF_SERVER_BASE_URL}${imageUrl}/info.json`, {});
 
-   var responseString = await req;
-   var response = JSON.parse(responseString);
+   try {
+       var responseString = await req;
+       var response = JSON.parse(responseString);
 
-   if(response.width && response.height){
-     return {
-       width: response.width,
-       height: response.height
-     };
-   }else{
-     throw new Error("Could not fetch width and height from server. Double check URLs");
+       if(response.width !== undefined && response.height !== undefined){
+         return {
+           width: response.width,
+           height: response.height
+         };
+       }else{
+         throw new Error("Could not fetch width and height from server. Double check URLs");
+       }
+   } catch (e) {
+       throw new Error("There was an error with the dimension request. Please verify image exists");
    }
 }
 
@@ -506,6 +518,8 @@ async function getWidthAndHeightDataFromServer(imageUrl){
   // TODO: Page mapping: page_url -> image_url
   // Each element in `media_pages` is a URL to a Scalar page for the photo we are
   // generating a manifest for.
+  //
+  // Note: I think this can be sped up
   for(const url of arrays.media_pages){
     if(!url.includes(page_url)){
       console.log(`Skipping ${url}`);
@@ -519,10 +533,15 @@ async function getWidthAndHeightDataFromServer(imageUrl){
     var webAnnotationPageID = url + "/page/p1/1";
     var annotationPageID = url + "/page/p2/1";
     var webAnnotationImageID = url + "/annotation/p1-image";
-    var imageURL = image_url;  // Obtained from media-page-url -> image-url mapping (hand made)
+
+    if (IMAGE_MAPPING[url] === undefined || !IMAGE_MAPPING[url]) {
+        throw Error(`Media page url "${url}" not found in image mapping. Please verify that an entry has been made.`);
+    }
+
+    var imageURL = IMAGE_MAPPING[url];  // TODO Obtained from media-page-url -> image-url mapping (hand made)
     var imageDimensions = getImageWidthAndHeightDataFromServer(imageURL);
-    var imageWidth = 0;  // TODO: Get this via the function provided
-    var imageHeight = 0;  // TODO: Get this via the function provided
+    var imageWidth = 0;  // TODO: imageDimensions.width
+    var imageHeight = 0;  // TODO: imageDimensions.height
 
     var manifest = new I3.Manifest(3, manifestID);
     var canvas = new I3.ItemCanvas(canvasID, imageWidth, imageHeight);
