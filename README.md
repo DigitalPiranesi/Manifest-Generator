@@ -9,7 +9,7 @@ converting all necessary elements into an IIIF Manifest.
 
 ## Usage
 1. Generate a manifest by running `node src/BookInfoRetriever.js <media page
-url>` to generate a manifest for the given media page.
+url> [... more urls]` to generate a manifest for the given media page.
 2. Copy the output JSON and paste into a text file.
 3. Edit the `EDIT_ME` portions of the text as appropriate
 4. Upload text file in deployment environment
