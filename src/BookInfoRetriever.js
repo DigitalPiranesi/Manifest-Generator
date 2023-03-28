@@ -33,12 +33,12 @@
  * var parsed_annotations = arrays.parsed_annotations;
  */
 
-const IIIF_BASE_SERVER_URL = "https://env-4072537.us.reclaim.cloud/iiif/2/";
+const IIIF_SERVER_BASE_URL = "https://env-4072537.us.reclaim.cloud/iiif/2/";
 const fs = require('fs');
 const config = require('../data/rdf_data.json');
 const XMLHttpRequest = require('xhr2');
 const I3 = require('@digital-piranesi/iiif-manifest-generator').default;
-const IMAGE_MAPPING = require('../data/image_mapping_all_volumes');
+const IMAGE_MAPPING = require('../data/image_mapping_all_volumes').pages;
 
 const IN_EASY_TERMS = {
   ARTSTOR_URL: "http://simile.mit.edu/2003/10/ontologies/artstor#url",
@@ -439,9 +439,6 @@ class RDFDecoder {
       }
     }
 
-    // Optional status report
-    console.log("\n\nWas able to identify " + parsed_annotations.length + " annotations.");
-
     return {
       media_pages: media_pages,
       composites: composites,
@@ -481,7 +478,7 @@ function calculate_annotations(annotationObject, width, height, target) {
  * @return An object with the `width` and `height` properties
  * @throws Error
  */
-async function getWidthAndHeightDataFromServer(imageUrl){
+async function getImageWidthAndHeightDataFromServer(imageUrl){
    var req = await request("GET", `${IIIF_SERVER_BASE_URL}${imageUrl}/info.json`, {});
 
    try {
@@ -501,7 +498,7 @@ async function getWidthAndHeightDataFromServer(imageUrl){
    }
 }
 
-(function(){
+(async function(){
   if(!Array.isArray(process.argv) || process.argv.length < 3) {
     console.log(`usage: ${process.argv[1]} <page url>`);
     return;
@@ -523,7 +520,7 @@ async function getWidthAndHeightDataFromServer(imageUrl){
 
     console.log(`Beginning construction for ${url}`);
     // TODO: Look into whether this has to be the actual URL of the manifest
-    var manifestID = url + ".json";
+    var manifestID = "EDIT_ME_TO_MATCH_URL_AND_FILE_PATH.json";
     var canvasID   = url + "/canvas/p1";
     var webAnnotationPageID = url + "/page/p1/1";
     var annotationPageID = url + "/page/p2/1";
@@ -531,12 +528,19 @@ async function getWidthAndHeightDataFromServer(imageUrl){
 
     if (IMAGE_MAPPING[url] === undefined || !IMAGE_MAPPING[url]) {
         throw Error(`Media page url "${url}" not found in image mapping. Please verify that an entry has been made.`);
+    } else {
+        console.log(`Using image file ${IMAGE_MAPPING[url]["name"]}`);
     }
 
-    var imageURL = IMAGE_MAPPING[url];  // TODO Obtained from media-page-url -> image-url mapping (hand made)
-    var imageDimensions = getImageWidthAndHeightDataFromServer(imageURL);
-    var imageWidth = 0;  // TODO: imageDimensions.width
-    var imageHeight = 0;  // TODO: imageDimensions.height
+    try {
+        var imageURL = IMAGE_MAPPING[url]["name"];  // TODO: Add the url of the server ahead (with full, et cetera added)
+        var imageDimensions = {width: 500, height: 500}; // TODO: await getImageWidthAndHeightDataFromServer(imageURL);
+        var imageWidth = imageDimensions.width;
+        var imageHeight = imageDimensions.height;
+    } catch(e){
+        console.log(`Unable to connect to server.`);
+        return;
+    }
 
     var manifest = new I3.Manifest(3, manifestID);
     var canvas = new I3.ItemCanvas(canvasID, imageWidth, imageHeight);
@@ -553,17 +557,17 @@ async function getWidthAndHeightDataFromServer(imageUrl){
 
     // Find all annotations for this page.
     for(const annotation of arrays.parsed_annotations){
-      // If this condition is true, then the annotation belongs to this page.
       if(annotation.uri == url){
         i++;
-        // TODO: Add annotation to textual annotations
         var textAnnotation = new I3.ItemTextualAnnotation(url + "/annotation/t" + i, "painting", annotation.title + " " + annotation.content, "en", annotation.uri);
         annotationPage.addItem(textAnnotation);
       }
     }
 
-    canvas.addAnnotationPage(annotationPage);
-    console.log(manifest.toJSONString());
-    // TODO: Write to file: url.json
+    if(annotationPage.getItems().length > 0) {
+        canvas.addAnnotationPage(annotationPage);
+    }
+
+    console.log(JSON.stringify(JSON.parse(manifest.toJSONString()), null, 2));
   }
 })();
