@@ -518,7 +518,7 @@ async function getImageWidthAndHeightDataFromServer(imageUrl){
       continue;
     }
 
-    console.log(`Beginning construction for ${url}`);
+    console.log(`Beginning construction for: ${url}`);
     // TODO: Look into whether this has to be the actual URL of the manifest
     var manifestID = "EDIT_ME_TO_MATCH_URL_AND_FILE_PATH.json";
     var canvasID   = url + "/canvas/p1";
@@ -528,8 +528,9 @@ async function getImageWidthAndHeightDataFromServer(imageUrl){
 
     if (IMAGE_MAPPING[url] === undefined || !IMAGE_MAPPING[url]) {
         throw Error(`Media page url "${url}" not found in image mapping. Please verify that an entry has been made.`);
+        return;
     } else {
-        console.log(`Using image file ${IMAGE_MAPPING[url]["name"]}`);
+        console.log(`Using image file: ${IMAGE_MAPPING[url]["name"]}`);
     }
 
     try {
