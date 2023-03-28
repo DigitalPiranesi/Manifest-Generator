@@ -498,18 +498,7 @@ async function getImageWidthAndHeightDataFromServer(imageUrl){
    }
 }
 
-(async function(){
-  if(!Array.isArray(process.argv) || process.argv.length < 3) {
-    console.log(`usage: ${process.argv[1]} <page url>`);
-    return;
-  }
-
-  var page_url = process.argv[2];
-  var decoder = new RDFDecoder(config);
-
-  console.log(`Beginning decoding...`);
-  var arrays = decoder.decode();
-
+async function generate_manifest(page_url, arrays) {
   console.log(`Generating manifest for page: ${page_url}`);
 
   // Note: I think this can be sped up
@@ -528,7 +517,7 @@ async function getImageWidthAndHeightDataFromServer(imageUrl){
 
     if (IMAGE_MAPPING[url] === undefined || !IMAGE_MAPPING[url]) {
         throw Error(`Media page url "${url}" not found in image mapping. Please verify that an entry has been made.`);
-        return;
+        return null;
     } else {
         console.log(`Using image file: ${IMAGE_MAPPING[url]["name"]}`);
     }
@@ -540,7 +529,7 @@ async function getImageWidthAndHeightDataFromServer(imageUrl){
         var imageHeight = imageDimensions.height;
     } catch(e){
         console.log(`Unable to connect to server.`);
-        return;
+        return null;
     }
 
     var manifest = new I3.Manifest(3, manifestID);
@@ -569,6 +558,34 @@ async function getImageWidthAndHeightDataFromServer(imageUrl){
         canvas.addAnnotationPage(annotationPage);
     }
 
-    console.log(JSON.stringify(JSON.parse(manifest.toJSONString()), null, 2));
+    return JSON.stringify(JSON.parse(manifest.toJSONString()), null, 2);
   }
+}
+
+(async function(){
+    if(!Array.isArray(process.argv) || process.argv.length < 3) {
+        console.log(`usage: ${process.argv[1]} <page url>`);
+        return;
+    }
+
+    var page_urls = [];
+    for(var i = 2; i < process.argv.length; i++) {
+        page_urls.push(process.argv[i]);
+    }
+
+    var decoder = new RDFDecoder(config);
+
+    console.log(`Beginning decoding (this may take some time)...`);
+    var arrays = decoder.decode();
+
+    for(const media_page of page_urls) {
+        var manifest = await generate_manifest(media_page, arrays);
+
+        if(manifest != null) {
+            console.log(`\n${manifest}\n`);
+            console.log("===================");
+        } else {
+            console.log(`\nFailed to generate manifest for: ${media_page}\n`);
+        }
+    }
 })();
