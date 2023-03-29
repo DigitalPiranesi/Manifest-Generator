@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/DigitalPiranesi/Manifest-Generator#readme",
   "dependencies": {
-    "@digital-piranesi/iiif-manifest-generator": "^1.0.1",
+    "@digital-piranesi/iiif-manifest-library": "^1.1.0",
     "xhr2": "^0.2.1"
   }
 }

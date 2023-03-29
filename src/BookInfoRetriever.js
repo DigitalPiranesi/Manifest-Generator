@@ -37,7 +37,7 @@ const IIIF_SERVER_BASE_URL = "https://env-4072537.us.reclaim.cloud/iiif/2/";
 const fs = require('fs');
 const config = require('../data/rdf_data.json');
 const XMLHttpRequest = require('xhr2');
-const I3 = require('@digital-piranesi/iiif-manifest-generator').default;
+const I3 = require('@digital-piranesi/iiif-manifest-library').default;
 const IMAGE_MAPPING = require('../data/image_mapping_all_volumes').pages;
 
 const IN_EASY_TERMS = {
