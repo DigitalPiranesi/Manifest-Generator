@@ -25,12 +25,6 @@ stored on an arbitrary IIIF-compatible server and moved around as necessary. As
 long as the actual names of the files do not change, the mapping will be
 consistent.
 
-Requirements:
-  - A complete mapping of Media Page URLs to the image file names must be
-    available
-
-*Note: This is an area of active development and needs assistance*
-
 ### 4. Fetch Image Dimensions from IIIF Server
 The generator dynamically fetches the dimensions of the image from the IIIF
 Server, ensuring 1) that the image exists on the server, and 2) that the server
@@ -45,10 +39,8 @@ The textual annotations are located and cross-referenced with the media page
 URL, then added to the manifest. These are 1) discovered, 2) scaled according to
 the image size found in step 4, 3) attached to the manifest
 
-### 6. Write to file
-The generator writes the manifest as a JSON file
-
-*Note: This is an area of active development and needs assistance*
+### 6. Write to console
+The manifests are written to the console as JSON
 
 ## Format for Images
 Images stored in an IIIF compliant image server are expected to be stored in the
