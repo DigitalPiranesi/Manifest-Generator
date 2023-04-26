@@ -420,21 +420,31 @@ class RDFDecoder {
         var annotation_content = this.get_content(annotation_body_uri);
         var target = this.get_target(anno);
 
-        // TODO: Bug here regarding how pixel offset is calculated
-        var xywh = {
-          // x%,y% format
-          x: parseFloat(target.xywh.split(",")[0]) / 100,
-          y: parseFloat(target.xywh.split(",")[1]) / 100,
-          w: target.xywh.split(",")[2],
-          h: target.xywh.split(",")[3]
-        };
+        var xywh = {x: 0, y: 0, w: 0, h: 0, multW: false, multH: false};
+
+        xywh.x = parseFloat(target.xywh.split(",")[0]) / 100;
+        xywh.y = parseFloat(target.xywh.split(",")[1]) / 100;
+
+        if (target.xywh.split(",")[2] != undefined && target.xywh.split(",")[2].includes("%")) {
+            xywh.w = parseFloat(target.xywh.split(",")[2]) / 100;
+            xywh.multW = true;
+        } else {
+            xywh.w = target.xywh.split(",")[2];
+        }
+
+        if (target.xywh.split(",")[3] != undefined && target.xywh.split(",")[3].includes("%")) {
+            xywh.h = parseFloat(target.xywh.split(",")[3]) / 100;
+            xywh.multH = true;
+        } else {
+            xywh.h = target.xywh.split(",")[3];
+        }
 
         parsed_annotations.push({
           title: annotation_title || "",
           content: annotation_content || "",
           xywh: target.xywh || "",
           int_xywh: xywh,
-          uri: target.uri
+          uri: `${target.uri}`
         });
       }
     }
@@ -523,8 +533,8 @@ async function generate_manifest(page_url, arrays) {
     }
 
     try {
-        var imageURL = IMAGE_MAPPING[url]["name"];  // TODO: Add the url of the server ahead (with full, et cetera added)
-        var imageDimensions = {width: 500, height: 500}; // TODO: await getImageWidthAndHeightDataFromServer(imageURL);
+        var imageURL = `${IIIF_SERVER_BASE_URL}${IMAGE_MAPPING[url]["name"]}/full/full/0/default.jpg`;
+        var imageDimensions = await getImageWidthAndHeightDataFromServer(IMAGE_MAPPING[url]["name"]);
         var imageWidth = imageDimensions.width;
         var imageHeight = imageDimensions.height;
     } catch(e){
@@ -549,7 +559,28 @@ async function generate_manifest(page_url, arrays) {
     for(const annotation of arrays.parsed_annotations){
       if(annotation.uri == url){
         i++;
-        var textAnnotation = new I3.ItemTextualAnnotation(url + "/annotation/t" + i, "painting", annotation.title + " " + annotation.content, "en", annotation.uri);
+        var target_x = (annotation.int_xywh.x * imageWidth) | 0;
+        var target_y = (annotation.int_xywh.y * imageHeight) | 0;
+        var target_w = annotation.int_xywh.w;
+        var target_h = annotation.int_xywh.h;
+
+        if (annotation.int_xywh.multW) {
+            target_w *= imageWidth;
+            target_w |= 0;
+        }
+
+        if (annotation.int_xywh.multH) {
+            target_h *= imageHeight;
+            target_h |= 0;
+        }
+
+        console.log(`Annotation: ${annotation.xywh}`);
+        var textAnnotation = new I3.ItemTextualAnnotation(url + "/annotation/t" + i, 
+            "painting", 
+            annotation.title + " " + annotation.content, 
+            "en", 
+            `${annotation.uri}#xywh=${target_x},${target_y},${target_w},${target_h}`
+        );
         annotationPage.addItem(textAnnotation);
       }
     }
